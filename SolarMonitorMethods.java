@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+ class SolarMonitorMethods
+ {
+
+    
+    public static double calculateTotalEnergy(double morningEnergy, double eveningEnergy) {
+        return morningEnergy + eveningEnergy;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        double morningEnergy = scanner.nextDouble();
+        double eveningEnergy = scanner.nextDouble();
+
+        
+        double totalEnergy = calculateTotalEnergy(morningEnergy, eveningEnergy);
+
+        
+        System.out.println("Total Energy Generated: " + totalEnergy);
+
+        scanner.close();
+    }
+}
